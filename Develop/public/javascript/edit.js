@@ -7,17 +7,17 @@ const editFormHandler = async function(event) {
   const body = document.querySelector('textarea[name="post-body"]').value;
 
   await fetch(`/api/post/${postId}`, {
-       // Create the functionality to help create the buttons for your website.
-
+      method: 'PUT',
+      body: JSON.stringify({ title, body })
   });
 
   document.location.replace('/dashboard');
 };
 
 const deleteClickHandler = async function() {
-  await     // Create the functionality to help create the buttons for your website.
-
-
+  await fetch(`/api/post/${postId}`, {     // Create the functionality to help create the buttons for your website.
+    method: 'DELETE'
+  });
   document.location.replace('/dashboard');
 };
 

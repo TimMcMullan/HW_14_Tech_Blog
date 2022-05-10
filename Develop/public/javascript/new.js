@@ -6,6 +6,7 @@ const newFormHandler = async function(event) {
   
     await fetch(`/api/post`, {
          // Create the functionality to help create the buttons for your website.
+         // Post method **see comment.js for body
 
     });
   

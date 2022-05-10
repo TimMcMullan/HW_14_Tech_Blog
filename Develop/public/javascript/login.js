@@ -6,6 +6,7 @@ const loginFormHandler = async function(event) {
   
     const response = await fetch('/api/user/login', {
           // Create the functionality to help create the buttons for your website.
+          // post with username & password properties
 
     });
   
